@@ -1,0 +1,15 @@
+/* Unique Scratch Styling */
+body {
+    background-color: #ffe8e8; /* Light red tint to match diagram */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.scratch-container {
+    border: 5px dashed #ff4c4c;
+    padding: 40px;
+    text-align: center;
+}
