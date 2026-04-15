@@ -5,14 +5,13 @@
     <title>The King's Scratch Page</title>
     <link rel="stylesheet" href="style2.css">
     <style>
-        /* Custom Background and Anchor Styling for the Scratch Page */
         body {
-            background-color: #1a1a1a; /* Custom dark background */
+            background-color: #1a1a1a; 
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth; /* Smooth scrolling for the anchor */
+            scroll-behavior: smooth;
         }
         .content-wrapper {
             max-width: 900px;
@@ -20,20 +19,25 @@
             padding: 50px;
             background: rgba(255, 255, 255, 0.05);
         }
-        .section { margin-bottom: 100px; }
         .nav-anchor { color: #ffcc00; text-decoration: none; font-weight: bold; }
         
-        /* Stylized for Your Portrait */
+        /* FIXED IMAGE STYLING */
         .profile-photo {
-            max-width: 300px; /* Adjust size as needed */
-            border: 4px solid #ffcc00; /* Gold border */
-            border-radius: 50%; /* Circular mask */
-            box-shadow: 0 0 15px rgba(255, 204, 0, 0.5); /* Gold glow */
+            width: 250px; 
+            height: 250px; /* Forces square dimensions before rounding */
+            object-fit: cover; /* Prevents squishing */
+            border: 4px solid #ffcc00; 
+            border-radius: 50%; 
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.5); 
             display: block;
             margin: 0 auto;
         }
         
-        .video-container { margin-top: 20px; border: 5px solid #333; }
+        .video-container { 
+            margin-top: 20px; 
+            border: 5px solid #333;
+            background: #000;
+        }
     </style>
 </head>
 <body>
@@ -44,27 +48,26 @@
             <a href="index.html" class="nav-anchor">Back to Home Portal</a>
         </nav>
 
-        <div class="section">
-            <h1 class="text-center">J. Joshua Bennion</h1>
-            <p class="text-center">Account Executive & BYU Accounting Scholar</p>
-
+        <div style="margin-bottom: 100px;">
+            <h1 style="text-align: center;">J. Joshua Bennion</h1>
+            
             <div style="text-align: center; margin: 30px 0;">
-                <img src="portrait.png" alt="J. Joshua Bennion Portrait" class="profile-photo">
-                <p><em>4.00 GPA, Marriott School of Business student[cite: 31, 39, 40].</em></p>
+                <img src="portrait.jpeg" alt="J. Joshua Bennion Portrait" class="profile-photo">
+                <p style="margin-top: 15px;"><em>4.00 GPA | BYU Accounting Student</em></p>
             </div>
 
             <h3>Key Success Metrics</h3>
             <ol>
                 <li><strong>Academic Excellence</strong>
                     <ul>
-                        <li>Maintain 4.00/4.00 GPA at BYU [cite: 4, 31, 39, 40]</li>
-                        <li>Full-Academic Scholarship Recipient [cite: 31, 39, 40]</li>
+                        <li>Full-Academic Scholarship Recipient</li>
+                        <li>Pre-business student [cite: 7]</li>
                     </ul>
                 </li>
-                <li><strong>Entrepreneurial Growth</strong>
+                <li><strong>Professional Impact</strong>
                     <ul>
-                        <li>Founder of Salty's Rock Salt Delivery [cite: 31, 39, 40]</li>
-                        <li>Tableau-based financial reporting [cite: 31, 39, 40]</li>
+                        <li>Account Executive at STYYL [cite: 16]</li>
+                        <li>Founder of Salty's Rock Salt Delivery [cite: 11]</li>
                     </ul>
                 </li>
             </ol>
@@ -72,25 +75,22 @@
 
         <hr>
 
-        <div id="video-section" class="section">
+        <div id="video-section" style="margin-bottom: 100px;">
             <h2>Performance & Inspiration</h2>
-            <p>Highlights of elite-level performance.</p>
             
             <div class="video-container">
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
                     <iframe 
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
                         src="https://www.youtube.com/embed/S_0S7S6mXMo" 
-                        title="LeBron James Highlights" 
+                        title="YouTube video player" 
                         frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen>
                     </iframe>
                 </div>
             </div>
-            <p style="margin-top: 20px; text-align: center;">
-                <a href="#" class="nav-anchor">↑ Return to Top</a>
-            </p>
+            <p style="margin-top: 20px; text-align: center;"><a href="#" class="nav-anchor">↑ Return to Top</a></p>
         </div>
     </div>
 
